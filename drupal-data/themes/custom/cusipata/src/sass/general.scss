@@ -43,6 +43,7 @@
     width: 100%;
     bottom: 0;
     left: 0;
+    z-index: 20;
     > ul {
       text-align: center;
       margin: 0;
@@ -194,13 +195,16 @@
   }
 }
 
-.instrumentos-container li a {
-  display: block;
-  background: $naranja;
-  color: $bistre;
-  text-decoration: none;
-  padding: 8px 10px;
-  border-left: 4px solid $guinda;
+.instrumentos-container li {
+  margin-bottom: 3px;
+  a {
+    display: block;
+    background: $naranja;
+    color: $bistre;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-left: 4px solid $guinda;
+  }
 }
 
 .alcalde-doc-item {
