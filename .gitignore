@@ -1,8 +1,8 @@
 db-data/
 drupal-data/files
 drupal-data/modules
-drupal-data/themes/custom/egemsa/js/egemsa.js
-drupal-data/themes/custom/egemsa/css/*
+drupal-data/themes/custom/cusipata/js/cusipata.js
+drupal-data/themes/custom/cusipata/css/*
 
 node_modules
 
