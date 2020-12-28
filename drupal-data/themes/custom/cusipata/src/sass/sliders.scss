@@ -1,0 +1,32 @@
+.slider-item-figure {
+  margin: 0 2px;
+  position: relative;
+  figcaption {
+    position: absolute;
+    background: rgba($verde, 0.7);
+    color: white;
+    padding: 5px 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.slick-arrow {
+  z-index: 10;
+  opacity: 1 !important;
+  &:before {
+    color: $verde;
+    border-radius: 50%;;
+    font-size: 50px;
+  }
+}
+
+.slick-prev {
+  left: 30px !important;
+}
+
+.slick-next {
+  right: 30px !important;
+}

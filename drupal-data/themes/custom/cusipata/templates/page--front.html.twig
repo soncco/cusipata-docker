@@ -1,0 +1,62 @@
+{% extends "themes/custom/cusipata/templates/base.html.twig" %}
+{% block main %}
+  <figure id="main-figure">
+    {{ page.foto_portada }}
+  </figure>
+
+  <section id="home-noticias">
+    <div class="container">
+      <h2>Noticias</h2>
+      <p class="description">Encuentra nuestra última información, notas de prensa, comunicados y más. </p>
+
+      <div class="row">
+        {{ page.home_noticias }}
+      </div>
+      <p class="text-right">
+        <a href="/noticias" class="btn btn-azul">Todas las noticias <i class="fas fa-arrow-right"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <section id="home-documentos">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="instrumentos-container">
+            <h4 class="titulo-bloque">
+              <i class="fas fa-folder-open"></i> Instrumentos de gestión
+            </h4>
+            {{ page.home_instrumentos }}
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="alcalde-container">
+            <h4 class="titulo-encima">La municipalidad</h4>
+            <div class="fondo-gris">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="alcalde text-center">
+                    <figure>
+                      <a href="/alcalde">{{ page.foto_alcalde }}</a>
+                    </figure>
+                    <h5>Edgar Mesco Maza</h5>
+                    <p>Alcalde</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="resoluciones">
+                    <h5>Resoluciones de alcaldía</h5>
+                    {{ page.home_alcaldia }}
+                    <p class="text-right">
+                      <a href="/documentos/resoluciones-alcaldia" class="btn btn-azul">Todas las resoluciones <i class="fas fa-arrow-right"></i></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

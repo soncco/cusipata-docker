@@ -1,0 +1,33 @@
+<header id="header">
+  <div class="header-container">
+    <h1 id="logo">
+      <a href="{{ base_path }}">Municipalidad Distrital de Cusipata</a>
+    </h1>
+    <div id="toggle-nav">
+      <button class="zero">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <aside class="header-right">
+      <p class="transparencia">
+        <a href="#"><img src="{{ base_path ~ directory }}/assets/transparencia.png" alt="Portal de transparencia"></a>
+      </p>
+      <p class="social-header">
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+      </p>
+    </aside>
+
+  </div>
+  <nav id="main-nav">
+    {{ page.main_nav }}
+  </nav>
+</header>
+
+{% block main %}{% endblock %}
+
+<div id="footer">
+  {{ page.footer }}
+</div>

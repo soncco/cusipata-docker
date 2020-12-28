@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.6rem;
+}
+
+a {
+  color: #38618c;
+}
+
+h2 {
+  color: #96565d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, serif;
+}
+
+.btn-azul {
+  background: #38618c;
+  color: white;
+}
+.btn-azul:hover {
+  background: #477ab0;
+  color: white;
+}
+
+.btn-verde {
+  background: #67a28d;
+  color: white;
+}
+.btn-verde:hover {
+  background: #87b5a5;
+  color: white;
+}
+
+#header {
+  background: #96565d;
+  position: relative;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header a {
+  color: white;
+}
+#header .header-right {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  z-index: 1;
+}
+#header h1#logo {
+  width: 281px;
+  height: 90px;
+  background: url("../assets/logo.png") no-repeat top left;
+  background-size: 281px 90px;
+  transition: all 0.5s;
+  margin: 0;
+  margin-left: 10px;
+  z-index: 1;
+}
+#header h1#logo a {
+  width: 281px;
+  height: 90px;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#header #toggle-nav {
+  display: none;
+}
+#header #main-nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+#header #main-nav > ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#header #main-nav > ul ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 0;
+  border: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+#header #main-nav > ul > li {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s;
+}
+#header #main-nav > ul > li:hover {
+  background: #e7af76;
+  padding: auto;
+}
+#header #main-nav > ul > li:hover > a {
+  color: #96565d;
+}
+#header #main-nav > ul > li:hover > ul {
+  display: block;
+}
+#header #main-nav > ul > li > ul {
+  display: none;
+  background-color: white;
+}
+#header #main-nav > ul > li > ul li {
+  list-style-type: none;
+  width: 300px;
+  text-align: left;
+  transition: background-color 0.3s linear;
+}
+#header #main-nav > ul > li > ul li a {
+  color: #231F20;
+}
+#header #main-nav > ul > li > ul li:hover {
+  background: #67a28d;
+}
+#header #main-nav > ul > li > ul li:hover a {
+  color: white;
+  font-weight: 500;
+}
+#header #main-nav li {
+  margin: 0;
+}
+#header #main-nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+@media (max-width: 992px) {
+  #header #main-nav {
+    display: none;
+  }
+}
+
+.fondo-gris {
+  background: #F2F2F2;
+  padding: 40px 20px 10px 20px;
+}
+
+.noticia-item {
+  border-bottom: 4px solid #67a28d;
+}
+.noticia-item .tag-container a {
+  display: inline-block;
+  background-color: #67a28d;
+  color: white;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+.noticia-item h3 {
+  font-size: 20px;
+}
+.noticia-item .date-container {
+  text-align: right;
+  color: #777777;
+}
+.noticia-item:hover {
+  border-color: #96565d;
+}
+.noticia-item:hover .tag-container a {
+  background: #96565d;
+}
+.noticia-item:hover h3 a {
+  color: #222;
+}
+
+.documento-item {
+  background: #F2F2F2;
+  padding: 5px 10px;
+  border-bottom: 4px solid #96565d;
+}
+.documento-item:hover {
+  border-color: #67a28d;
+}
+.documento-item h3 {
+  font-size: 18px;
+}
+.documento-item .date-container {
+  margin-bottom: 0;
+}
+
+#footer {
+  background: #251605;
+  color: white;
+  text-align: center;
+}
+
+#content {
+  padding-bottom: 3rem;
+}
+
+.titulo-bloque {
+  font-size: 20px;
+  border-bottom: 1px solid #67a28d;
+  color: #38618c;
+  padding-bottom: 3px;
+}
+.titulo-bloque i {
+  color: #67a28d;
+}
+
+.resoluciones h5 {
+  color: #38618c;
+  font-size: 20px;
+}
+
+.instrumentos-container li a {
+  display: block;
+  background: #e7af76;
+  color: #251605;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-left: 4px solid #96565d;
+}
+
+.alcalde-doc-item {
+  border-bottom: 1px solid #cdcaca;
+}
+.alcalde-doc-item:last-of-type {
+  margin-bottom: 20px;
+}
+.alcalde-doc-item i {
+  color: #E64843;
+}
+
+.title-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title-container .main-title {
+  position: relative;
+  color: #96565d;
+  padding-bottom: 10px;
+}
+.title-container .main-title:after {
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  top: 100%;
+  left: 0;
+  background: #67a28d;
+  content: "";
+}
+
+.youtube-container iframe {
+  width: 100%;
+  height: 550px;
+}
+
+.subtitulo {
+  margin: 2rem 0;
+  color: #67a28d;
+}
+
+.tipo-doc-aside {
+  background-color: #67a28d;
+  color: white;
+  font-size: 20px;
+  padding: 2rem 4rem;
+}
+.tipo-doc-aside a {
+  color: white;
+}
+
+.fecha-pub {
+  background: #F2F2F2;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+.fecha-pub p {
+  margin: 0;
+}
+.fecha-pub i {
+  color: #67a28d;
+}
+
+.main-figure {
+  overflow: hidden;
+}
+.main-figure img {
+  width: 100%;
+}
+
+.path-frontpage #header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(150, 86, 93, 0.8);
+}
+
+#main-figure img {
+  width: 100%;
+}
+
+#home-documentos {
+  position: relative;
+  margin-top: 80px;
+}
+#home-documentos .col-md-6:first-child:after {
+  content: "";
+  background-color: #cdcaca;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#home-documentos .titulo-encima {
+  position: absolute;
+  color: white;
+  background: #96565d;
+  padding: 20px 25px;
+  top: -30px;
+  left: 50px;
+}
+#home-documentos .alcalde {
+  padding-top: 20px;
+}
+#home-documentos .alcalde img {
+  display: block;
+  box-shadow: 10px 10px 0 #96565d;
+}
+#home-documentos .alcalde h5 {
+  color: #96565d;
+  font-size: 20px;
+}
+#home-documentos .alcalde p {
+  color: black;
+}
+
+.slider-item-figure {
+  margin: 0 2px;
+  position: relative;
+}
+.slider-item-figure figcaption {
+  position: absolute;
+  background: rgba(103, 162, 141, 0.7);
+  color: white;
+  padding: 5px 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.slick-arrow {
+  z-index: 10;
+  opacity: 1 !important;
+}
+.slick-arrow:before {
+  color: #67a28d;
+  border-radius: 50%;
+  font-size: 50px;
+}
+
+.slick-prev {
+  left: 30px !important;
+}
+
+.slick-next {
+  right: 30px !important;
+}
+
+/*# sourceMappingURL=cusipata.css.map */

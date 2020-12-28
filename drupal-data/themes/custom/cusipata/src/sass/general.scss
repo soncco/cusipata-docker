@@ -1,0 +1,277 @@
+#header {
+  background: $guinda;
+  position: relative;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  a {
+    color: white;
+  }
+
+  .header-right {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    z-index: 1;
+  }
+
+  h1#logo {
+    width: 281px;
+    height: 90px;
+    background: url('../assets/logo.png') no-repeat top left;
+    background-size: 281px 90px;
+    transition: all .5s;
+    margin: 0;
+    margin-left: 10px;
+    z-index: 1;
+    a {
+      width: 281px;
+      height: 90px;
+      display: block;
+      text-indent: -9999px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  #toggle-nav {
+    display: none;
+  }
+
+  #main-nav {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    > ul {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      ul {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        padding: 0;
+        border: 0;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.25);
+      }
+    }
+
+    > ul > li {
+      display: inline-block;
+      position: relative;
+      transition: all .3s;
+      &:hover {
+        background: $naranja;
+        padding: auto;
+        > a {
+          color: $guinda;
+        }
+        > ul {
+          display: block;
+        }
+      }
+      > ul {
+        display: none;
+        background-color: white;
+        li {
+          list-style-type: none;
+          width: 300px;
+          text-align: left;
+          transition: background-color .3s linear;
+          a {
+            color: #231F20;
+          }
+
+          &:hover {
+            background: $verde;
+            a {
+              color: white;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
+
+    @include lg {
+      display: none;
+    }
+
+  }
+}
+
+.fondo-gris {
+  background: $fondo;
+  padding: 40px 20px 10px 20px
+}
+
+.noticia-item {
+  border-bottom: 4px solid $verde;
+
+  .tag-container a {
+    display: inline-block;
+    background-color: $verde;
+    color: white;
+    padding: 3px 10px;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .date-container {
+    text-align: right;
+    color: $gristexto;
+  }
+
+  &:hover {
+    border-color: $guinda;
+
+    .tag-container a {
+      background: $guinda;
+    }
+
+    h3 a {
+      color: $gris;
+    }
+  }
+}
+
+.documento-item {
+  background: $fondo;
+  padding: 5px 10px;
+  border-bottom: 4px solid $guinda;
+
+  &:hover {
+    border-color: $verde;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .date-container {
+    margin-bottom: 0;
+  }
+}
+
+#footer {
+  background:  $bistre;
+  color: white;
+  text-align: center;
+}
+
+#content {
+  padding-bottom: 3rem;
+}
+
+.titulo-bloque {
+  font-size: 20px;
+  border-bottom: 1px solid $verde;
+  color: $azul;
+  padding-bottom: 3px;
+  i {
+    color: $verde;
+  }
+}
+
+.resoluciones {
+  h5 {
+    color: $azul;
+    font-size: 20px;
+  }
+}
+
+.instrumentos-container li a {
+  display: block;
+  background: $naranja;
+  color: $bistre;
+  text-decoration: none;
+  padding: 8px 10px;
+  border-left: 4px solid $guinda;
+}
+
+.alcalde-doc-item {
+  border-bottom: 1px solid #cdcaca;
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+
+  i {
+    color: #E64843;
+  }
+}
+
+.title-container {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .main-title {
+    position: relative;
+    color: $guinda;
+    padding-bottom: 10px;
+
+    &:after {
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      top: 100%;
+      left: 0;
+      background: $verde;
+      content: ''
+    }
+  }
+
+}
+
+.youtube-container iframe {
+  width: 100%;
+  height: 550px;
+}
+
+.subtitulo {
+  margin: 2rem 0;
+  color: $verde;
+}
+
+.tipo-doc-aside {
+  background-color: $verde;
+  color: white;
+  font-size: 20px;
+  padding: 2rem 4rem;
+  a {
+    color: white;
+  }
+}
+
+.fecha-pub {
+  background: $fondo;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  p {
+    margin: 0;
+  }
+
+  i {
+    color: $verde;
+  }
+}
+
+.main-figure {
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+name: CUSIPATA
+type: theme
+description: Tema principal del sitio web de la Municipalidad de Cusipata
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: false
+libraries:
+  - cusipata/bootstrap4
+  - cusipata/font-awesome
+  - cusipata/aos
+  - cusipata/slick
+  - cusipata/parallax
+  - cusipata/lity
+  - cusipata/lightbox
+  - cusipata/global-styling
+regions:
+  header: Header
+  main_nav: Menú principal
+  help: Ayuda
+  content: Content
+  footer: Footer
+
+  foto_portada: Foto Portada
+  foto_alcalde: Foto Alcalde
+  home_noticias: Home Noticias
+  home_instrumentos: Home instrumentos
+  home_alcaldia: Home Res. Alcaldía
+

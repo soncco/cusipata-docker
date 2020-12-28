@@ -1,0 +1,56 @@
+.path-frontpage {
+  #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba($guinda, 0.8)
+  }
+}
+
+#main-figure {
+  img {
+    width: 100%;
+  }
+}
+
+#home-documentos {
+  position: relative;
+  margin-top: 80px;
+
+  .col-md-6:first-child:after {
+    content: '';
+    background-color: #cdcaca;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .titulo-encima {
+    position: absolute;
+    color: white;
+    background: $guinda;
+    padding: 20px 25px;
+    top: -30px;
+    left: 50px;
+  }
+
+  .alcalde {
+    padding-top: 20px;
+    img {
+      display: block;
+      box-shadow: 10px 10px 0 $guinda;
+    }
+
+    h5 {
+      color: $guinda;
+      font-size: 20px;
+    }
+
+    p {
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{% set foto = fields.field_imagen.content %}
+{% set tag = fields.field_tipo_de_noticia.content %}
+{% set title = fields.title.content %}
+{% set fecha = fields.created.content %}
+<div class="col-md-4">
+  <div class="noticia-item">
+    <figure>
+      {{ foto }}
+    </figure>
+    <p class="tag-container">
+      {{ tag }}
+    </p>
+    <h3>{{ title }}</h3>
+    <p class="date-container">
+      {{ fecha }}
+    </p>
+  </div>
+</div>
