@@ -13,6 +13,20 @@
     bottom: 0;
     right: 10px;
     z-index: 1;
+
+    @include sm {
+      bottom: 10px;
+      .transparencia {
+        img {
+          width: 80px;
+        }
+
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
   }
 
   h1#logo {
@@ -32,10 +46,35 @@
       overflow: hidden;
       white-space: nowrap;
     }
+
+    @include md {
+      margin-left: 50px;
+    }
+
+    @include sm {
+      width: 150px;
+      height: 48px;
+      background-size: 150px 48px;
+      a {
+        width: 150px;
+        height: 48px;
+      }
+    }
   }
 
   #toggle-nav {
     display: none;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    button {
+      background: transparent;
+      border: 0;
+      color: white;
+    }
+    @include md {
+      display: block;
+    }
   }
 
   #main-nav {
@@ -119,6 +158,7 @@
 
 .noticia-item {
   border-bottom: 4px solid $verde;
+  margin-bottom: 20px;
 
   .tag-container a {
     display: inline-block;
@@ -148,12 +188,21 @@
       color: $gris;
     }
   }
+
+  @include sm {
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .documento-item {
   background: $fondo;
   padding: 5px 10px;
   border-bottom: 4px solid $guinda;
+  margin-bottom: 20px;
 
   &:hover {
     border-color: $verde;
@@ -176,6 +225,13 @@
 
 #content {
   padding-bottom: 3rem;
+  & > img {
+    @include md {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .titulo-bloque {
@@ -277,5 +333,10 @@
   overflow: hidden;
   img {
     width: 100%;
+    @include md {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

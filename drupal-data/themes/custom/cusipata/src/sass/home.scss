@@ -4,19 +4,39 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba($guinda, 0.8)
+    background: rgba($guinda, 0.8);
+
+    @include md {
+      position: relative;
+      top: auto;
+      left: auto;
+      background: $guinda;
+    }
   }
 }
 
 #main-figure {
   img {
     width: 100%;
+
+    @include md {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
 #home-documentos {
   position: relative;
   margin-top: 80px;
+
+  @include sm {
+    margin-top: 10px;
+    .instrumentos-container {
+      margin-bottom: 50px;
+    }
+  }
 
   .col-md-6:first-child:after {
     content: '';
